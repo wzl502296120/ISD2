@@ -1,8 +1,10 @@
 <%-- 
     Document   : createshipment
     Created on : 08/05/2019, 11:11:30 AM
-    Author     : Max.Okura
+    Author     : Mawgee.Okura
 --%>
+<link href="../CSS.css" rel="stylesheet" type="text/css">
+<%@include file="../header.jsp"%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>

@@ -4,6 +4,7 @@
     Author     : Mawgee Okura 
 --%>
 <link href="CSS.css" rel="stylesheet" type="text/css">
+<%@include file="header.jsp"%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -14,22 +15,7 @@
     </head>
     <body>
       
-    <ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#news">Browse/Search Movies</a></li>
-  <li><a href="#contact">Checkout and Pay</a></li>
-  <li><a href="#about">Track Orders</a></li>
-    <div class="dropdown">
-    <button class="dropbtn"> Account Management <i class="fa fa-caret-down"></i> </button>
-    <div class="dropdown-content">
-      <a href="#">Add/Update Payment Details</a>
-      <a href="#">Add/Update Account details</a>
- 
-    </div>
-  </div> 
-    <li><a href="#about">Help</a></li>
-    <li id="login"> <a href="login"> Login/Register </a> <li>
-</ul>
+
         
 
           <h1> Welcome to Online Movie Ordering Application (OMOA) System</h1>

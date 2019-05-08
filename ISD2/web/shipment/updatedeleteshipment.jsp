@@ -3,6 +3,8 @@
     Created on : 08/05/2019, 11:32:11 AM
     Author     : Max.Okura
 --%>
+<link href="../CSS.css" rel="stylesheet" type="text/css">
+<%@include file="../header.jsp"%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>

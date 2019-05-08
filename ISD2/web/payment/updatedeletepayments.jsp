@@ -3,6 +3,8 @@
     Created on : 08/05/2019, 11:04:46 AM
     Author     : Mawgee.Okura
 --%>
+<link href="../CSS.css" rel="stylesheet" type="text/css">
+<%@include file="../header.jsp"%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>

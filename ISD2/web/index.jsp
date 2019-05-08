@@ -1,7 +1,7 @@
 <%-- 
     Document   : index
     Created on : 08/04/2019, 10:44:21 AM
-    Author     : Max.Okura
+    Author     : Mawgee Okura 
 --%>
 <link href="CSS.css" rel="stylesheet" type="text/css">
 
@@ -28,7 +28,7 @@
     </div>
   </div> 
     <li><a href="#about">Help</a></li>
-    <li id="login"> <a href="login"> Login/Logout </a> <li>
+    <li id="login"> <a href="login"> Login/Register </a> <li>
 </ul>
         
 

@@ -10,19 +10,19 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+       
     </head>
     <body>
            <ul>
-  <li><a class="active" href="#home">Home</a></li>
+  <li><a class="active" href="index.jsp">Home</a></li>
 
     <div class="dropdown">
         
         <button class="dropbtn"> Movies <i class="fa fa-caret-down"></i> </button>
     <div class="dropdown-content">
-        <a href="#">List or Search Movies</a>
-        <a href="#">View Saved Movies</a>
-        <a href="#">Update/Delete Saved Movies</a>
+        <a href="../movie/moviesearch.jsp">List or Search Movies</a>
+        <a href="../movie/viewmovie.jsp">View Saved Movies</a>
+        <a href="../movie/movieupdatedelete.jsp">Update/Delete Saved Movies</a>
  
     </div>
     </div> 
@@ -31,9 +31,9 @@
         
         <button class="dropbtn"> Payment <i class="fa fa-caret-down"></i> </button>
     <div class="dropdown-content">
-        <a href="#">Add Payment Details</a>
-        <a href="#">View Payment Details</a>
-        <a href="#">Update/Delete Payment Details</a>
+        <a href="../payment/addpaymentdetails.jsp">Add Payment Details</a>
+        <a href="../payment/viewpayments.jsp">View Payment Details</a>
+        <a href="../payment/updatedeletepayments.jsp">Update/Delete Payment Details</a>
  
     </div>
     </div> 
@@ -45,9 +45,9 @@
         
         <button class="dropbtn"> Shipment <i class="fa fa-caret-down"></i> </button>
     <div class="dropdown-content">
-        <a href="#">Add Shipment Details</a>
-        <a href="#">View Shipment Details</a>
-        <a href="#">Update/Delete Shipment Details</a>
+        <a href="../shipment/createshipment.jsp">Add Shipment Details</a>
+        <a href="../shipment/viewshipment.jsp">View Shipment Details</a>
+        <a href="../shipment/updatedeleteshipment.jsp">Update/Delete Shipment Details</a>
  
     </div>
     </div> 
@@ -58,8 +58,10 @@
         
         <button class="dropbtn"> Track Orders <i class="fa fa-caret-down"></i> </button>
     <div class="dropdown-content">
-        <a href="#">View Orders</a>
-        <a href="#">Update/Cancel Orders</a>
+        <a href="../order/addorder.jsp">Create Orders</a>
+        <a href="../order/vieworders.jsp">View Orders</a>
+        <a href="../order/updatecancelorder.jsp">Update/Cancel Orders</a>
+      
  
     </div>
     </div> 
@@ -69,8 +71,8 @@
         
         <button class="dropbtn"> Account Management <i class="fa fa-caret-down"></i> </button>
     <div class="dropdown-content">
-        <a href="#">View Access Logs</a>
-        <a href="#">Update/Delete Account Details</a>
+        <a href="../user/accesslogs.jsp">View Access Logs</a>
+        <a href="../user/registerviewupdatedelete.jsp">Update/Delete Account Details</a>
  
     </div>
     </div> 

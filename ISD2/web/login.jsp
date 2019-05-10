@@ -1,6 +1,6 @@
 <%-- 
-    Document   : login
-    Created on : 08/05/2019, 9:24:10 AM
+    Document   : index
+    Created on : 08/04/2019, 10:44:21 AM
     Author     : Mawgee.Okura
 --%>
 
@@ -8,10 +8,34 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <meta charset="UTF-8">
+        <title>login page</title>
+       <link href="CSS.css" rel="stylesheet" type="text/css">
     </head>
-    <body>
-        <h1>Hello World!</h1>
+
+    <body bgcolor = "gray">
+        <div>
+            <div class="cardBox">
+                <div class="headerBox" style="background-color: black;">
+                    <p>
+                       User Login
+                    </p>
+                </div>
+                    <form action="index.jsp" method="POST">
+                    
+                <div class="bodyBox">
+                    <p>UserName:<input type="text" name="username"></p>
+                    <p>Password:<input type="password" name="password"></p>
+                    <p> <input type="submit" value="Login">  <a href="register.jsp"><input type="button" value="Sign Up"></a>
+                    </p>
+                </div>
+                        
+                    </form> 
+            </div>
+
+        </div>
+
+
     </body>
+
 </html>

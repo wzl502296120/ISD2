@@ -43,7 +43,7 @@
 //    ArrayList<Staff> allStaff = new ArrayList<>();
 //    ArrayList<Staff> allStaff = controller.getAllStaff();
     
-final String URL = "jdbc:mysql://localhost:3306/OMOA_DB";
+        final String URL = "jdbc:mysql://localhost:3306/OMOA_DB";
         final String USERNAME = "root";
         final String PASSWORD = "Qwrfy*3/";
         String staff_query = "Select * FROM Staff";

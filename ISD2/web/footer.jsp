@@ -17,19 +17,22 @@
     </head>
     <body>
         <div class="footer">
-            <p>  <% 
-            oms.model.Register users = (oms.model.Register) session.getAttribute("loggedin");
-            
-            %>
-            
-           <% if (users != null) {%>
-               
-               You are logged in as 
-               <%= users.getEmail()%>
-               
-               
-               
-            <%}%> </p>
+            <p>
+            <% 
+                Register users = (Register) session.getAttribute("loggedin");
+                
+                %>
+                
+                <% if (users != null) {%> 
+                
+                You are logged in as 
+                
+                <%= users.getEmail()%>
+                
+                <%}%>
+                
+            </p>
+           
         </div>
     </body>
 </html>

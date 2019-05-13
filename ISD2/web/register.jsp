@@ -6,7 +6,7 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="oms.model.*" %>
-<%@include file="header.jsp"%>
+
 
 
 <!DOCTYPE html>
@@ -19,7 +19,7 @@
         <h1>Register</h1>
         <br> 
         <div class="container">
-        <form action="index.jsp" method="POST">
+        <form action="index1.jsp" method="POST">
             <tr>
                 <td> <label> email: </label> </td>
                 <td><input type="text" name="email" > <br> <br> </td>

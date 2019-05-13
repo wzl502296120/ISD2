@@ -8,33 +8,33 @@
 <%@page import="oms.model.*" %>
 <link href="CSS.css" rel="stylesheet" type="text/css">
 
-    <% 
-            oms.model.Register loginlogout = (oms.model.Register) session.getAttribute("loggedin");
             
-
-            %>
-            
-     <%!				              // observe, declaration
-   String option;
-   String link;
-   
-%>       
-           <% if (loginlogout != null) {%>
-               
-              <% option ="Logout";%>
-              <% link="logout.jsp"; %>
-              
-            <%}%> 
-            else {%>
-                   <% option ="Login";%>
-              <% link="login.jsp"; %>
-                    <% } %>
+  
 
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-       
+    
+<%!
+String option;
+String link;
+%>
+
+  <%  
+   
+   
+            Register loginlogout = (Register) session.getAttribute("loggedin");
+            
+ if(loginlogout !=null){
+    option="logout";
+    link="logout.jsp";
+           
+ } else {
+     option="login";
+     link = "login.jsp";
+ }
+    %>   
     </head>
     <body>
       

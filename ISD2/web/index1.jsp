@@ -1,35 +1,28 @@
 <%-- 
-    Document   : index
-    Created on : 08/04/2019, 10:44:21 AM
-    Author     : Mawgee Okura 
+    Document   : index1
+    Created on : 13/05/2019, 1:46:19 PM
+    Author     : Max.Okura
 --%>
-
-<link href="CSS.css" rel="stylesheet" type="text/css">
-<%@include file="header.jsp"%>
-<%@include file="footer.jsp"%>
-<%@page import="oms.model.*" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
-    <% String firstname = request.getParameter("firstname"); %>
+<%@page import="oms.model.*" %>
+<link href="CSS.css" rel="stylesheet" type="text/css">
+<!DOCTYPE html>
+   <% String firstname = request.getParameter("firstname"); %>
     <% String lastname = request.getParameter("lastname"); %>
     <% String email = request.getParameter("email"); %>
     <% String password = request.getParameter("password"); %>
     <% int phone = Integer.parseInt(request.getParameter("phonenumber")); %>
-
-
-     
-
-
-     <%
+        
+<%
             oms.model.Register loggedin = new oms.model.Register(firstname,lastname,email,password,phone);
             session.setAttribute("loggedin", loggedin);
             
             
             %>
             
-            
-
-<!DOCTYPE html>
+<jsp:include page="header.jsp" />
+<jsp:include page="footer.jsp" />
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -37,11 +30,9 @@
     </head>
     <body>
    
-  
-        
 
           <h1> Welcome to Online Movie Ordering Application (OMOA) System</h1>
-       
+          <p> you're email is <%= loggedin.getEmail() %> </p>
           <br> 
           <h2>About the system </h2>
           <p> Enjoy the ability to order the latest movies.  </p>
@@ -77,3 +68,4 @@
         
     </body>
 </html>
+

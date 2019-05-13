@@ -5,7 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="model.*" %>
+<%@page import="oms.model.*" %>
 <link href="CSS.css" rel="stylesheet" type="text/css">
 
 
@@ -18,7 +18,7 @@
     <body>
         <div class="footer">
             <p>  <% 
-            Model.Register users = (Model.Register) session.getAttribute("loggedin");
+            oms.model.Register users = (oms.model.Register) session.getAttribute("loggedin");
             
             %>
             

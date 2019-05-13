@@ -5,21 +5,30 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="Model.*" %>
+<%@page import="oms.model.*" %>
 <link href="CSS.css" rel="stylesheet" type="text/css">
 
     <% 
-            Model.Register loginlogout = (Model.Register) session.getAttribute("loggedin");
+            oms.model.Register loginlogout = (oms.model.Register) session.getAttribute("loggedin");
             
 
             %>
             
+     <%!				              // observe, declaration
+   String option;
+   String link;
+   
+%>       
            <% if (loginlogout != null) {%>
                
-              <% String option ="Logout";%>
-              <% String link="logout.jsp"; %>
+              <% option ="Logout";%>
+              <% link="logout.jsp"; %>
               
             <%}%> 
+            else {%>
+                   <% option ="Login";%>
+              <% link="login.jsp"; %>
+                    <% } %>
 
 <!DOCTYPE html>
 <html>
@@ -95,7 +104,7 @@
   
   
     <li><a href="#about">Help</a></li>
-    <li id="login"> <a href="login"> <textarea></textarea> </a> <li>
+    <li id="login"> <a href="<%= link %>"> <%= option %> </a> <li>
 </ul>
     </body>
 </html>

@@ -7,6 +7,7 @@
 <link href="CSS.css" rel="stylesheet" type="text/css">
 <%@include file="header.jsp"%>
 <%@include file="footer.jsp"%>
+<%@page import="oms.model.*" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
     <% String firstname = request.getParameter("firstname"); %>
@@ -20,7 +21,7 @@
 
 
      <%
-            Model.Register loggedin = new Model.Register(firstname,lastname,email,password,phone);
+            oms.model.Register loggedin = new oms.model.Register(firstname,lastname,email,password,phone);
             session.setAttribute("loggedin", loggedin);
             
             

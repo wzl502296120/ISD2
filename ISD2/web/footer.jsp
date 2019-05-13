@@ -28,7 +28,7 @@
                   <%  
    
   
- if(users.getFirstname() != "error"){
+ if(users.getEmail() != "error"){
     message = "You are logged in as " + users.getEmail();
            
  } else {

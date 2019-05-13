@@ -21,10 +21,10 @@
                        User Login
                     </p>
                 </div>
-                    <form action="index.jsp" method="POST">
+                    <form action="index1.jsp" method="POST">
                     
                 <div class="bodyBox">
-                    <p>UserName:<input type="text" name="username"></p>
+                    <p>UserName:<input type="text" name="email"></p>
                     <p>Password:<input type="password" name="password"></p>
                     <p> <input type="submit" value="Login">  <a href="register.jsp"><input type="button" value="Sign Up"></a>
                     </p>

@@ -26,7 +26,7 @@ String link;
    
             Register loginlogout = (Register) session.getAttribute("loggedin");
             
- if(loginlogout.getFirstname() != "error"){
+ if(loginlogout.getEmail() != "error"){
     option="logout";
     link="logout.jsp";
            

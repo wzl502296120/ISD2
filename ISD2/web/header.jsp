@@ -5,7 +5,22 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="model.*" %>
 <link href="CSS.css" rel="stylesheet" type="text/css">
+
+  <% 
+            Model.Register loginlogout = (Model.Register) session.getAttribute("loggedin");
+            
+            %>
+            
+           <% if (loginlogout != null) {%>
+               
+               You are logged in as <%= .getName()%>
+               <%= users.getEmail()%>
+               
+               
+               
+            <%}%> 
 <!DOCTYPE html>
 <html>
     <head>
@@ -13,7 +28,7 @@
        
     </head>
     <body>
-           <ul>
+           <ul >
   <li><a class="active" href="index.jsp">Home</a></li>
 
     <div class="dropdown">
@@ -79,7 +94,10 @@
   
   
     <li><a href="#about">Help</a></li>
-    <li id="login"> <a href="login"> Login/Register </a> <li>
+    <li id="login"> <a href="login"> <%
+String name="BlaBla"
+%>
+<s:textarea label="Address" name="address" cols="40" rows="10"><%=name%></s:textarea> </a> <li>
 </ul>
     </body>
 </html>

@@ -26,7 +26,7 @@ String link;
    
             Register loginlogout = (Register) session.getAttribute("loggedin");
             
- if(loginlogout !=null){
+ if(loginlogout.getFirstname() != "error"){
     option="logout";
     link="logout.jsp";
            
@@ -104,6 +104,7 @@ String link;
   
   
     <li><a href="#about">Help</a></li>
+    
     <li id="login"> <a href="<%= link %>"> <%= option %> </a> <li>
 </ul>
     </body>

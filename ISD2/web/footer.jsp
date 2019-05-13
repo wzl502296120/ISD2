@@ -17,20 +17,27 @@
     </head>
     <body>
         <div class="footer">
-            <p>
+            
+            <%! String message; %>
+            
             <% 
                 Register users = (Register) session.getAttribute("loggedin");
                 
                 %>
-                
-                <% if (users != null) {%> 
-                
-                You are logged in as 
-                
-                <%= users.getEmail()%>
-                
-                <%}%>
-                
+               
+                  <%  
+   
+  
+ if(users.getFirstname() != "error"){
+    message = "You are logged in as " + users.getEmail();
+           
+ } else {
+     
+    message = "You are not logged in";
+ }
+    %>   
+              
+    <p>  <%= message %>
             </p>
            
         </div>

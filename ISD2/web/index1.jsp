@@ -8,11 +8,35 @@
 <%@page import="oms.model.*" %>
 <link href="CSS.css" rel="stylesheet" type="text/css">
 <!DOCTYPE html>
-   <% String firstname = request.getParameter("firstname"); %>
-    <% String lastname = request.getParameter("lastname"); %>
-    <% String email = request.getParameter("email"); %>
-    <% String password = request.getParameter("password"); %>
-    <% int phone = Integer.parseInt(request.getParameter("phonenumber")); %>
+   <% String firstname;
+    if(request.getParameter("firstname") == null){
+        firstname = "error";}
+    else{
+        firstname = request.getParameter("firstname");
+    }%>
+    
+     <% String lastname;
+    if(request.getParameter("lastname") == null){
+        lastname = "error";}
+    else{
+        lastname = request.getParameter("firstname");
+    }%>
+    
+    <% String email;
+    if(request.getParameter("email") == null){
+        email = "error";}
+    else{
+        email = request.getParameter("email");
+    }%>
+     <% String password;
+    if(request.getParameter("password") == null){
+        password = "error";}
+    else{
+        password = request.getParameter("password");
+    }%>
+   
+    <%! int phone = 123; %>
+   
         
 <%
             oms.model.Register loggedin = new oms.model.Register(firstname,lastname,email,password,phone);
@@ -32,7 +56,7 @@
    
 
           <h1> Welcome to Online Movie Ordering Application (OMOA) System</h1>
-          <p> you're email is <%= loggedin.getEmail() %> </p>
+         
           <br> 
           <h2>About the system </h2>
           <p> Enjoy the ability to order the latest movies.  </p>

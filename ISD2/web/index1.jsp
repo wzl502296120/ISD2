@@ -45,7 +45,7 @@
             
             %>
             
-<jsp:include page="header.jsp" />
+<jsp:include page="headerindex.jsp" />
 <jsp:include page="footer.jsp" />
 <html>
     <head>

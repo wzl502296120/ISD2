@@ -28,11 +28,11 @@ String link;
             
  if(loginlogout.getEmail() != "error"){
     option="logout";
-    link="logout.jsp";
+    link="../logout.jsp";
            
  } else {
      option="login";
-     link = "login.jsp";
+     link = "../login.jsp";
  }
     %>   
     </head>
@@ -98,7 +98,7 @@ String link;
     <div class="dropdown-content">
         <a href="../user/accesslogs.jsp">View Access Logs</a>
         <a href="../user/registerview.jsp">View Account Details</a>
-        <a href="../user/registerviewupdatedelete.jsp">Update/Delete Account Details</a>
+        <a href="../user/registerupdatedelete.jsp">Update/Delete Account Details</a>
  
     </div>
     </div> 

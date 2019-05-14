@@ -1,12 +1,15 @@
 <%-- 
     Document   : index1
     Created on : 13/05/2019, 1:46:19 PM
-    Author     : Max.Okura
+    Author     : Mawgee.Okura
 --%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 <%@page import="oms.model.*" %>
 <link href="CSS.css" rel="stylesheet" type="text/css">
+
+<!-- JSP retrieves data when user logins or registers. variables are set to 'error' 
+so that when index page is run, a null pointer exception won't occur since the object is not empty-->
 <!DOCTYPE html>
    <% String firstname;
     if(request.getParameter("firstname") == null){
@@ -19,7 +22,7 @@
     if(request.getParameter("lastname") == null){
         lastname = "error";}
     else{
-        lastname = request.getParameter("firstname");
+        lastname = request.getParameter("lastname");
     }%>
     
     <% String email;
@@ -37,14 +40,15 @@
    
     <%! int phone = 123; %>
    
-        
+   <!-- Creation of session -->     
 <%
             oms.model.Register loggedin = new oms.model.Register(firstname,lastname,email,password,phone);
             session.setAttribute("loggedin", loggedin);
             
             
             %>
-            
+    <!-- Inclusion of header and footer -->  
+    
 <jsp:include page="headerindex.jsp" />
 <jsp:include page="footer.jsp" />
 <html>

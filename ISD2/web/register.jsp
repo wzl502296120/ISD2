@@ -48,7 +48,7 @@
             </tr>
           
  
-            <input type="submit" name="submit"> 
+            <input type="submit" name="submit" value="Register"> 
         </form>
         
             

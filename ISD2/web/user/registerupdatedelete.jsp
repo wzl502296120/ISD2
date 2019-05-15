@@ -16,7 +16,7 @@
              String email;
              int phone;
              String password;
-             
+             String message1;
            %> 
         
         <%  
@@ -28,7 +28,7 @@
             
          <%
                 if(updateuser.getEmail() != "error"){
-                    
+                    message1  = "";
                     firstname = updateuser.getFirstname();
                     lastname  = updateuser.getLastname();
                     email     = updateuser.getEmail();
@@ -36,8 +36,8 @@
                     password  = updateuser.getPassword();
                 } 
                 else{
-                 
-                    firstname = "Please login to update account details";
+                    message1 ="Please login to update or delete details";
+                    firstname = "";
                     lastname = "";
                     email    = "";
                     phone    = 0;
@@ -58,6 +58,8 @@
     <body>
         
         <h2>Update Account Details </h2>
+        
+        <b><p><%= message1 %>  </p></b> </br>
         
         <div class="container">
             
@@ -90,7 +92,7 @@
             </tr>
           
  
-            <input type="submit" name="submit"> 
+            <input type="submit" name="submit" value="update">   <a href="deleteregister.jsp"><input type="button" value="Delete account"></a>
         </form>
      
         </div> 

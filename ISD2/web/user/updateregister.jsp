@@ -79,16 +79,7 @@
             
             </br>
          
-        <!--    <input type="button" <c:if test="${!disabled}"><c:out value="disabled='disabled'"/></c:if>">
-            
-            <c:choose>
-                    <c:when test="${!disabled}">
-                            <button  value="SendEmail" disabled="disabled" > </button>
-                    </c:when>
-            <c:otherwise>
-                    <input type="submit" value="SendEmail"  >
-              </c:otherwise>
-</c:choose> --> 
+      
         </div> 
     </body>
 </html>

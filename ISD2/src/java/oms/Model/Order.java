@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Controller;
+package oms.Model;
 
 /**
  *
  * @author Max.Okura
  */
-public class Controller {
+public class Order {
     
 }

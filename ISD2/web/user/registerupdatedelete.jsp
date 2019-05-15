@@ -42,7 +42,8 @@
                     email    = "";
                     phone    = 0;
                     password = "";
-                    
+                   
+                   
                 }
                 
                 
@@ -55,18 +56,28 @@
    
       
     </head>
-    <body>
+    
+   <script> 
+       function checkdisable(){
+           
+           if(updateuser.getEmail().equals("error")){
+               
+               document.getElementById("email").disabled=true;
+           
+       }
+    </script>  
+    <body onload="checkdisable()">
         
         <h2>Update Account Details </h2>
         
         <b><p><%= message1 %>  </p></b> </br>
         
-        <div class="container">
+        <div id="updatedelete" class="container">
             
          <form action="updateregister.jsp" method="POST">
             <tr>
                 <td> <label> email: </label> </td>
-                <td><input type="text" name="email" value="<%=email%>" > <br> <br> </td>
+                <td><input id="email" type="text" name="email" value="<%=email%>" > <br> <br> </td>
             </tr>
             
             <tr>
@@ -91,8 +102,8 @@
                 <td> <input type="text" name="phonenumber" value="<%=phone%>"><br> <br> </td>
             </tr>
           
- 
-            <input type="submit" name="submit" value="update">   <a href="deleteregister.jsp"><input type="button" value="Delete account"></a>
+        
+            <input id="update" type="submit" name="submit" value="update" >   <a href="deleteregister.jsp"><input type="button" value="Delete account"></a>
         </form>
      
         </div> 

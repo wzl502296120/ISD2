@@ -22,29 +22,29 @@
         <form action="index1.jsp" method="POST">
             <tr>
                 <td> <label> email: </label> </td>
-                <td><input type="text" name="email" > <br> <br> </td>
+                <td><input type="text" name="email" required="true" > <br> <br> </td>
             </tr>
             
             <tr>
                 <td> <label> firstname: </label> </td> 
-                <td> <input type="text" name="firstname" > <br> <br> </td>
+                <td> <input type="text" name="firstname" required="true"> <br> <br> </td>
             </tr>
             
             <tr>
                 <td> <label> lastname: </label> </td> 
-                <td> <input type="text" name="lastname" > <br> <br> </td>
+                <td> <input type="text" name="lastname" required="true"> <br> <br> </td>
             </tr>
            
             
             <tr>
                 <td> <label> password:</label> </td>
-                <td> <input type="password" name="password" > <br> <br>  </td> 
+                <td> <input type="password" name="password" required="true"> <br> <br>  </td> 
             
             </tr>
             
              <tr>
                 <td> <label> phonenumber: </label> </td> 
-                <td> <input type="text" name="phonenumber" > <br> <br> </td>
+                <td> <input type="text" name="phonenumber" required="true"> <br> <br> </td>
             </tr>
           
  

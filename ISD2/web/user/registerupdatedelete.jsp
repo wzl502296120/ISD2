@@ -14,7 +14,7 @@
              String firstname;
              String lastname;
              String email;
-             String phone;
+             int phone;
              String password;
              
            %> 
@@ -32,15 +32,15 @@
                     firstname = updateuser.getFirstname();
                     lastname  = updateuser.getLastname();
                     email     = updateuser.getEmail();
-                    phone     = Integer.toString(updateuser.getPhone());
+                    phone     = updateuser.getPhone();
                     password  = updateuser.getPassword();
                 } 
                 else{
                  
-                    firstname = "Please login to view account details";
+                    firstname = "Please login to update account details";
                     lastname = "";
                     email    = "";
-                    phone    = "";
+                    phone    = 0;
                     password = "";
                     
                 }
@@ -64,29 +64,29 @@
          <form action="updateregister.jsp" method="POST">
             <tr>
                 <td> <label> email: </label> </td>
-                <td><input type="text" name="email" placeholder=" <%= email %> " > <br> <br> </td>
+                <td><input type="text" name="email" value="<%=email%>" > <br> <br> </td>
             </tr>
             
             <tr>
                 <td> <label> firstname: </label> </td> 
-                <td> <input type="text" name="firstname" placeholder="  <%= firstname %> " > <br> <br> </td>
+                <td> <input type="text" name="firstname" value="<%=firstname%>" > <br> <br> </td>
             </tr>
             
             <tr>
                 <td> <label> lastname: </label> </td> 
-                <td> <input type="text" name="lastname" placeholder="  <%= lastname %>" > <br> <br> </td>
+                <td> <input type="text" name="lastname" value="<%=lastname%>"> <br> <br> </td>
             </tr>
            
             
             <tr>
                 <td> <label> password:</label> </td>
-                <td> <input type="password" name="password" placeholder=" <%= password %> " > <br> <br>  </td> 
+                <td> <input type="password" name="password" value="<%=password%>" > <br> <br>  </td> 
             
             </tr>
             
              <tr>
                 <td> <label> phonenumber: </label> </td> 
-                <td> <input type="text" name="phonenumber" placeholder="  <%= phone %>" > <br> <br> </td>
+                <td> <input type="text" name="phonenumber" value="<%=phone%>"><br> <br> </td>
             </tr>
           
  

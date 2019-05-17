@@ -1,0 +1,86 @@
+<%-- 
+    Document   : usermanagement
+    Created on : 2019-5-15, 19:09:07
+    Author     : zhilingwang
+--%>
+
+<link href="../CSS.css" rel="stylesheet" type="text/css">
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>User Management</title>
+        <style>
+               .searchbar-input{margin-right: 0px; margin-left:10px;width:200px;float:right }
+               
+               .searchbar-button{margin-right: 10px; margin-left:10px; width:70px; float:right}
+               .userlist-label{margin-right: 10px; margin-left:10px;float:left}
+               .button-ac{margin-right: 10px; margin-left:10px;}
+               
+               .button-rc{margin-right: 10px; margin-left:10px;}
+               .btn {
+                background-color: #FC766A;
+                margin-right: 10px; 
+                margin-left:10px;
+                height:60px;
+                width:100px;
+                color: white;
+                padding: 16px 20px;
+                border: none;
+                cursor: pointer;
+                
+                margin-bottom:10px;
+                opacity: 1;
+                border-radius: 12px;
+                } 
+                .btn:hover, .open-button:hover {
+                opacity: 0.9;
+                }
+        </style>
+        <%!
+            String firstname;
+            String lastname;
+            String email;
+            String phone;
+            Boolean deactivated;
+        %>
+        
+        
+    </head>
+    
+    <body>
+        <h1 align="center"><B>User Management</b></h1>
+        <br>
+        
+        <label class="userlist-label"><B> User List:</B></label>
+       
+        <input type="submit" value="Search" class="searchbar-button">
+    
+        
+        <input class="searchbar-input"type="text" name="name" id="SU"  placeholder="Enter username or phone number">
+        
+        
+        <table class="table">
+            <tr>
+                <th><B> First Name </B></th>
+                <th><B> Last Name </B></th>
+                <th><B> Email <B></th>
+                <th><B> Phone Number <B></th>
+                <th><B> Status <B></th>
+                <th><B>Options<B></th>
+            </tr>
+            <tr>
+                <th>getFirstName()</th>
+                <th>getLastName()</th>
+                <th>getEmail()</th>
+                <th>getPhoneNumber()</th>
+                <th>getStatus()</th>
+                <th><button>Edit Profile</button></th>
+            </tr>    
+        </table>
+        <br>
+        <center><button class="btn">Add new user</button>
+        <button class="btn">Remove user</button></center>
+    </body>
+</html>
